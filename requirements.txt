@@ -1,0 +1,5 @@
+google-cloud-aiplatform
+google-auth
+google-auth-oauthlib
+flask
+python-dotenv
