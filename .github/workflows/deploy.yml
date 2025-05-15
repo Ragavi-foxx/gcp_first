@@ -16,8 +16,7 @@ jobs:
     - name: Set up Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v0.2.0
       with:
-        project_id: arcane-shape-449219-v0  # Replace with your Google Cloud Project ID
-        credentials: FQHGX2Mi-tP_rtLGDHFBQ5OAKc3vVQ0175  # Use the service account key stored in GitHub Secrets
+        project_id: arcane-shape-449219-v0  # Your Google Cloud Project ID
 
     - name: Configure Docker
       run: |
