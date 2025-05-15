@@ -3,8 +3,7 @@ name: Deploy to Google Cloud Run
 on:
   push:
     branches:
-      - main      # Trigger on push to the main branch
-      - master    # Also trigger on push to the master branch
+      - main  # Trigger on push to the main branch
 
 jobs:
   build:
@@ -17,7 +16,8 @@ jobs:
     - name: Set up Google Cloud SDK
       uses: google-github-actions/setup-gcloud@v0.2.0
       with:
-        project_id: arcane-shape-449219-v0  
+        project_id: arcane-shape-449219-v0  # Replace with your Google Cloud Project ID
+        credentials: FQHGX2Mi-tP_rtLGDHFBQ5OAKc3vVQ0175  # Use the service account key stored in GitHub Secrets
 
     - name: Configure Docker
       run: |
